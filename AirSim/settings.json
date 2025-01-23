@@ -1,0 +1,51 @@
+{
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "ClockType": "SteppableClock",
+  "OriginGeopoint": {
+    "Latitude": 35.7348025,
+    "Longitude": 129.4465694
+},
+  "Vehicles": {
+      "PX4": {
+          "VehicleType": "PX4Multirotor",
+          "UseSerial": false,
+          "LockStep": true,
+          "UseTcp": true,
+          "TcpPort": 4560,
+          "ControlPortLocal": 14540,
+          "ControlPortRemote": 14580,
+          "Sensors":{
+              "Barometer":{
+                  "SensorType": 1,
+                  "Enabled": true,
+                  "PressureFactorSigma": 0.0001825
+              }
+          },
+          "Parameters": {
+              "NAV_RCL_ACT": 0,
+              "NAV_DLL_ACT": 0,
+              "COM_OBL_ACT": 1
+          }
+      },
+      "Cameras": {
+        "front": {
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 480,
+              "Height": 320,
+              "FOV_Degrees": 90,
+              "TargetGamma": 1.5
+            }
+          ],
+          "X": 0, "Y": 0, "Z": -0.5
+        }
+      }
+    },
+    "SubWindows": [
+    {"WindowID": 0, "CameraName": "front", "ImageType": 0, "VehicleName": "", "Visible": true}
+    ]
+  }
+
+
